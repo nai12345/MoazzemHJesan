@@ -8,7 +8,7 @@ body {
 }
 
 main {
-	background-image: url(../img/bg_body.gif);
+	background-color: #000000;
 	background-attachment: fixed;
 	background-size: cover;
     font-family: 'Montserrat', sans-serif;
