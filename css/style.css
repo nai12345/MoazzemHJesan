@@ -52,7 +52,7 @@ a:focus {
 .btn {
 	display: flex;
     padding: 12px 25px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 35px;
@@ -1033,6 +1033,10 @@ a:focus {
     	font-size: 10px;
     }
 
+    .hero .hero-btn .btn:first-child {
+        margin-right: -19px;
+    }
+
     .patreon_icon {
     	width: 43%;
     }
@@ -1188,10 +1192,52 @@ a:focus {
     font-weight: 700;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .section-header h2 {
+        font-size: 38px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .patreon_icon  {
+        width: 16%;
+    }
+    .youtube_icon {
+        width: 22%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section-header p {
+        font-size: 13px;
+    }
+
     .section-header h2 {
         font-size: 30px;
     }
+
+    .about .about-text p {
+        font-size: 13px !important;
+    }
+
+    .about .skill-name p {
+        font-size: 13px !important;
+    }
+
+    .font_size {
+        font-size: 9px;
+    }
+    
+    .patreon_icon  {
+        width: 16%;
+    }
+    .youtube_icon {
+        width: 22%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
 }
 
 
