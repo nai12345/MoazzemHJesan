@@ -61,7 +61,7 @@
                                     <a href="#experience" class="nav-link">Experience</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                                    <a href="#project" class="nav-link">Project</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#price" class="nav-link">Price</a>
@@ -182,31 +182,31 @@
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                         <div class="skills">
                                             <div class="skill-name">
-                                                <p>Web Design skill</p><p><span class="counterUp">85</span>%</p>
+                                                <p>Web Design skill</p><p id="progressbar_cuonter_up"><span class="progress_label_cuonter_up">0%</span></p>
                                             </div>
                                             <div class="progress">
                                                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                             <div class="skill-name">
-                                                <p>Web Development skill</p><p><span class="counterUp">85</span>%</p>
+                                                <p>Web Development skill</p><p id="progressbar_cuonter_up_2"><span class="progress_label_cuonter_up_2">0%</span></p>
                                             </div>
                                             <div class="progress">
                                                 <div class="progress-bar-1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                             <div class="skill-name">
-                                                <p>Email Template Design skill</p><p><span class="counterUp">100</span>%</p>
+                                                <p>Email Template Design skill</p><p id="progressbar_cuonter_up_3"><span class="progress_label_cuonter_up_3">0%</span></p>
                                             </div>
                                             <div class="progress">
                                                 <div class="progress-bar-2" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                             <div class="skill-name">
-                                                <p>WordPress Customization skill</p><p><span class="counterUp">85</span>%</p>
+                                                <p>WordPress Customization skill</p><p id="progressbar_cuonter_up_4"><span class="progress_label_cuonter_up_4">0%</span></p>
                                             </div>
                                             <div class="progress">
                                                 <div class="progress-bar-3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                             <div class="skill-name">
-                                                <p>WordPress Development skill</p><p><span class="counterUp">85</span>%</p>
+                                                <p>WordPress Development skill</p><p id="progressbar_cuonter_up_5"><span class="progress_label_cuonter_up_5">0%</span></p>
                                             </div>
                                             <div class="progress">
                                                 <div class="progress-bar-4" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
@@ -249,12 +249,16 @@
         <!-- Service Start -->
         <div class="service" id="service">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>What I do</p>
-                    <h2>Awesome Quality Services</h2>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="section-header text-center">
+                            <p>What I do</p>
+                            <h2>Awesome Quality Services</h2>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fa fa-laptop"></i>
@@ -262,12 +266,12 @@
                             <div class="service-text">
                                 <h3>Web Design</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                    From my Patreon account, you can buy the static (HTML) website theme template and plugins.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fa fa-laptop-code"></i>
@@ -275,12 +279,13 @@
                             <div class="service-text">
                                 <h3>Web Development</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                    From my Patreon account, you can buy the Dynamic (WordPress) website theme template and plugins.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <!--
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fab fa-android"></i>
@@ -293,7 +298,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fab fa-apple"></i>
@@ -306,6 +311,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
@@ -316,69 +322,79 @@
          <!-- Experience Start -->
         <div class="experience" id="experience">
             <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Resume</p>
-                    <h2>Working Experience</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="section-header text-center">
+                            <p>My Resume</p>
+                            <h2>Working Experience</h2>
                         </div>
                     </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="timeline">
+                            <div class="timeline-item left">
+                                <div class="timeline-text">
+                                    <div class="timeline-date"><time>2020 - Present</time></div>
+                                    <h2>Mentor</h2>
+                                    <h4>YouTubr</h4>
+                                    <p>
+                                        I am a mentor of full-stack web development on my youtube channel. There I upload the video tutorial series of full-stack web development.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-text">
+                                    <div class="timeline-date"><time>2021 - Present</time></div>
+                                    <h2>Web Designer and Developer</h2>
+                                    <h4>Patreon</h4>
+                                    <p>
+                                        I am a creator of website theme templates and plugins on my Patreon account. There I upload the website theme template and plugins to sell.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="timeline-item left">
+                                <div class="timeline-text">
+                                    <div class="timeline-date"><time>2045 - Present</time></div>
+                                    <h2>Web Developer</h2>
+                                    <h4>Soft Agency, San Francisco, CA</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-text">
+                                    <div class="timeline-date"><time>2045 - present</time></div>
+                                    <h2>Web Developer</h2>
+                                    <h4>Soft Agency, San Francisco, CA</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item left">
+                                <div class="timeline-text">
+                                    <div class="timeline-date"><time>2045 - present</time></div>
+                                    <h2>Web Developer</h2>
+                                    <h4>Soft Agency, San Francisco, CA</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item right">
+                                <div class="timeline-text">
+                                    <div class="timeline-date"><time>2045 - present</time></div>
+                                    <h2>Web Developer</h2>
+                                    <h4>Soft Agency, San Francisco, CA</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                                    </p>
+                                </div>
+                            </div>
+                            -->
                         </div>
                     </div>
                 </div>
@@ -386,33 +402,84 @@
         </div>
         <!-- Job Experience End -->
         </section>
-        
+
         <section>
-        <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
+        <!-- Upcoming Project Start -->
+        <div id="project">
             <div class="container">
-                <div class="section-header text-center">
-                    <p>Reasonable Price</p>
-                    <h2>Get A <span>Special</span> Price</h2>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="experience">
+                            <div class="section-header text-left text-center">
+                                <p>Upcoming Project</p>
+                                <h2>Education HTML Website Theme Template</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="container banner-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
-                    </p>
-                    <a class="btn">Pricing Plan</a>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="about">
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p>Total Preogress</p><p id="progressbar_cuonter_up_6"><span class="progress_label_cuonter_up_6">0%</span></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar-4" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Progress of HTML</p><p id="progressbar_cuonter_up_7"><span class="progress_label_cuonter_up_7">0%</span></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar-1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Progress of CSS</p><p id="progressbar_cuonter_up_8"><span class="progress_label_cuonter_up_8">0%</span></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Progress of JQuery & Javascript</p><p id="progressbar_cuonter_up_9"><span class="progress_label_cuonter_up_9">0%</span></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar-6" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Progress of Bootstrap</p><p id="progressbar_cuonter_up_10"><span class="progress_label_cuonter_up_10">0%</span></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Progress of Bug Fixing</p><p id="progressbar_cuonter_up_11"><span class="progress_label_cuonter_up_11">0%</span></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar-5" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Progress of Speed Optymization</p><p id="progressbar_cuonter_up_12"><span class="progress_label_cuonter_up_12">0%</span></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Banner End -->
+        <!-- Upcoming Project End -->
         </section>
+        
 
         <section>
         <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
+        <div class="portfolio">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>My Excellent Portfolio</h2>
+                    <p>Projects</p>
+                    <h2>Special Projects for Sell</h2>
                 </div>
                 <div class="row">
                     <div class="col-12">
@@ -921,7 +988,7 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/aos/aos.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterUp/jquery.counterup-1.0.0.min.js"></script>
+        <script src="lib/jquery_ui/jquery-ui.min.js"></script>
         <script src="lib/typed/typed.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
