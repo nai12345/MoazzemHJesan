@@ -1338,6 +1338,20 @@ a:focus {
     background: #EF233C;
 }
 
+.about .progress .progress-bar-5 {
+    width: 0px;
+    border-radius: 10px;
+    transition: 2s;
+    background: #6BB51B;
+}
+
+.about .progress .progress-bar-6 {
+    width: 0px;
+    border-radius: 10px;
+    transition: 2s;
+    background: #1E90FF;
+}
+
 .width {
     width: 90%;
 }
@@ -1544,7 +1558,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 #ff1493;
 }
 
 .service .service-icon {
@@ -1579,18 +1593,17 @@ a:focus {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
+    color: #ef233c;
     transition: 1s;
 }
 
 .service .service-text p {
     margin: 0;
     font-size: 16px;
-    transition: 1s;
 }
 
-.service .service-item:hover .service-text h3,
-.service .service-item:hover .service-text p {
-    color: #ffffff;
+.service .service-item:hover .service-text h3 {
+    color: yellow;
 }
 
 @media (max-width: 575.98px) {
