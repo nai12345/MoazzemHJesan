@@ -1235,12 +1235,6 @@ a:focus {
         width: 22%;
     }
 }
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-}
-
-
 /*******************************/
 /********** About CSS **********/
 /*******************************/
@@ -1356,9 +1350,64 @@ a:focus {
     width: 90%;
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
     .about .about-content {
         padding: 45px 15px 0 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about .about-content {
+        padding: 45px 15px 0 15px;
+    }
+
+    .center {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .about .about-content {
+        padding: 45px 15px 0 15px;
+    }
+
+    .center {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424.98px) {
+    .about .about-content {
+        padding: 45px 15px 0 15px;
+    }
+
+    .center {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374.98px) {
+    .about .about-content {
+        padding: 45px 15px 0 15px;
+    }
+
+    .center {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 319.98px) {
+    .about .about-content {
+        padding: 45px 15px 0 15px;
+    }
+
+    .center {
+        text-align: center !important;
+        justify-content: center !important;
     }
 }
 
