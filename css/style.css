@@ -1214,6 +1214,14 @@ a:focus {
         font-size: 13px;
     }
 
+    .section-header p::before {
+        top: 8px;
+    }
+
+    .section-header p::after {
+        top: 8px;
+    }
+
     .section-header h2 {
         font-size: 30px;
     }
