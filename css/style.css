@@ -1161,6 +1161,7 @@ a:focus {
     text-transform: uppercase;
     background: #ffffff;
     color: #797979;
+    border-radius: 6px;
 }
 
 .section-header p::before {
