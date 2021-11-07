@@ -866,7 +866,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(220, 0, 220, .95), rgba(220, 0, 220, .95), rgba(0, 220, 0, .95), rgba(5, 5, 5, .95), rgba(5, 5, 5, .95), rgba(5, 5, 5, .95), rgba(5, 5, 5, .95), rgba(5, 5, 5, .95), rgba(220, 220, 0, .95), rgba(220, 0, 0, .95)), url(../img/hero-bg.jpg);
+    background: linear-gradient(rgba(30, 144, 255, .95), rgba(30, 144, 255, .95), rgba(220, 0, 220, .95), rgba(5, 5, 5, .95), rgba(5, 5, 5, .95), rgba(5, 5, 5, .95), rgba(5, 5, 5, .95), rgba(5, 5, 5, .95), rgba(0, 220, 0, .95), rgba(220, 0, 0, .95)), url(../img/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2000,6 +2000,7 @@ a:focus {
     color: #ffffff;
     background: #414141;
     box-shadow: inset 0 0 0 50px #414141;
+    display: block;
 }
 
 .price .price-item .price-action .btn:hover {
@@ -2125,8 +2126,15 @@ a:focus {
 }
 
 @media(max-width: 575.98px) {
+    .team .team-item {
+        display: block;
+    }
+    .team .team-img {
+        width: 100%;
+    }
     .team .team-text {
-        padding: 0 15px;
+        padding: 19px 15px;
+        width: 100%;
     }
     
     .team .team-text h2 {
@@ -2243,8 +2251,8 @@ a:focus {
 .contact {
     position: relative;
     width: 100%;
-    margin: 45px 0;
-    background: limegreen;
+    margin: 45px 0 0px;
+    background: #1E90FF;
 }
 
 .contact .container-fluid {
@@ -2401,7 +2409,7 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    background: deeppink;
+    background: linear-gradient(90deg, green, red);
 }
 
 .footer .container-fluid {
