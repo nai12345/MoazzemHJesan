@@ -435,6 +435,27 @@
             }
         }
     });
+
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            776:{
+                items:1
+            },
+            777:{
+                items:2
+            },
+            1185:{
+                items:3
+            }
+        }
+    });
     
     
     
