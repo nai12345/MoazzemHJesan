@@ -2325,11 +2325,11 @@ a:focus {
 }
 
 @media (max-width: 767.98px) {
-    .contact .container-fluid, .contact_2  .container-fluid {
+    .contact .container-fluid, .contact_2 .container-fluid {
         background: none;
     }
 
-    .contact .contact-form .btn {
+    .contact .contact-form .btn, .contact_2 .contact-form .btn {
         margin: 35px auto 0px;
     }
     
