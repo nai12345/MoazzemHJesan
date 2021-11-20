@@ -163,7 +163,7 @@ a:focus {
     padding: 8px 0;
     text-align: center;
     line-height: 1;
-    font-size: 22px;
+    font-size: 22px !important;
     right: 15px;
     bottom: 15px;
     z-index: 9;
@@ -1235,7 +1235,7 @@ a:focus {
     }
 
     .font_size {
-        font-size: 9px;
+        font-size: 8px;
     }
     
     .patreon_icon  {
@@ -2255,12 +2255,19 @@ a:focus {
     background: #1E90FF;
 }
 
-.contact .container-fluid {
+.contact_2 {
+    position: relative;
+    width: 100%;
+    margin: 45px 0 0px;
+    background: rgba(5, 5, 5, .75);
+}
+
+.contact .container-fluid, .contact_2  .container-fluid {
     background: url(../img/contact.jpg) left center no-repeat;
     background-size: contain;
 }
 
-.contact .contact-form {
+.contact .contact-form, .contact_2 .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
 }
@@ -2318,11 +2325,15 @@ a:focus {
 }
 
 @media (max-width: 767.98px) {
-    .contact .container-fluid {
+    .contact .container-fluid, .contact_2  .container-fluid {
         background: none;
     }
+
+    .contact .contact-form .btn {
+        margin: 35px auto 0px;
+    }
     
-    .contact .contact-form {
+    .contact .contact-form, .contact_2 .contact-form {
         padding: 90px 0;
     }
 }
@@ -2377,6 +2388,7 @@ a:focus {
 .blog .blog-item a.btn {
     margin-top: 10px;
     padding: 8px 15px;
+    justify-content: center;
 }
 
 .blog .blog-item a.btn i {
