@@ -205,10 +205,10 @@ a:focus {
     
 }
 
-.navbar .navbar-brand .logo {
+.navbar .navbar-brand .logo, .navbar .navbar-brand .logo_2 {
 	width: 71%;
 }
-.navbar .navbar-brand .logo img {
+.navbar .navbar-brand .logo img, .navbar .navbar-brand .logo_2 img {
 	width: 100%;
 }
 
@@ -225,7 +225,6 @@ a:focus {
         width: 100%;
         padding: 0px;
         background: transparent !important;
-        border-bottom: 1px dashed rgba(256, 256, 256, .2);
         z-index: 9;
     }
     
@@ -316,7 +315,6 @@ a:focus {
         width: 100%;
         padding: 0px;
         background: transparent !important;
-        border-bottom: 1px dashed rgba(256, 256, 256, .2);
         z-index: 9;
     }
     
@@ -329,7 +327,7 @@ a:focus {
         color: #ffffff;
     }
 
-    .navbar .navbar-brand .logo {
+    .navbar .navbar-brand .logo, .navbar .navbar-brand .logo_2 {
     	width: 71%;
 	}
     
@@ -418,6 +416,10 @@ a:focus {
     .navbar .navbar-brand .logo {
     	width: 22%;
 	}
+
+    .navbar .navbar-brand .logo_2 {
+        width: 89%;
+    }
     
     .navbar .navbar-nav {
         margin-top: 15px;
@@ -487,6 +489,10 @@ a:focus {
     .navbar .navbar-brand .logo {
     	width: 30%;
 	}
+
+    .navbar .navbar-brand .logo_2 {
+        width: 125%;
+    }
 
 	.navbar-toggler {
 		width: 46px;
@@ -564,6 +570,10 @@ a:focus {
     	width: 30%;
 	}
 
+    .navbar .navbar-brand .logo_2 {
+        width: 134%;
+    }
+
 	.navbar-toggler {
 	    width: 38px;
 	    height: 38px;
@@ -640,6 +650,10 @@ a:focus {
     	width: 34%;
 	}
 
+    .navbar .navbar-brand .logo_2 {
+        width: 159%;
+    }
+
 	.navbar-toggler {
 	    width: 38px;
 	    height: 38px;
@@ -713,8 +727,12 @@ a:focus {
     }
 
     .navbar .navbar-brand .logo {
-    	width: 40%;
+    	width: 41%;
 	}
+
+    .navbar .navbar-brand .logo_2 {
+        width: 204%;
+    }
 
 	.navbar-toggler {
 	    width: 38px;
@@ -1149,7 +1167,7 @@ a:focus {
     margin-bottom: 45px;
 }
 
-.section-header p {
+.section-header h3 {
     display: inline-block;
     margin: 0 30px;
     margin-bottom: 10px;
@@ -1164,24 +1182,24 @@ a:focus {
     border-radius: 6px;
 }
 
-.section-header p::before {
+.section-header h3::before {
     position: absolute;
     content: "";
     height: 3px;
     width: 30px;
-    top: 11px;
+    top: 8px;
     right: 0;
     left: -30px;
     background: #EF233C;
     z-index: 1;
 }
 
-.section-header p::after {
+.section-header h3::after {
     position: absolute;
     content: "";
     width: 3px;
     height: 3px;
-    top: 11px;
+    top: 8px;
     left: 3px;
     background: #EF233C;
     z-index: 2;
@@ -1194,9 +1212,16 @@ a:focus {
     font-weight: 700;
 }
 
+.font_size_2 h2 {
+    font-size: 45px !important;
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .section-header h2 {
         font-size: 38px;
+    }
+    .font_size_2 h2 {
+        font-size: 38px !important;
     }
     .btn {
         font-size: 10px;
@@ -1210,27 +1235,31 @@ a:focus {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .section-header p {
+    .section-header h3 {
         font-size: 13px;
     }
 
-    .section-header p::before {
-        top: 8px;
+    .section-header h3::before {
+        top: 6px;
     }
 
-    .section-header p::after {
-        top: 8px;
+    .section-header h3::after {
+        top: 6px;
     }
 
     .section-header h2 {
         font-size: 30px;
     }
 
-    .about .about-text p {
+    .font_size_2 h2 {
+        font-size: 30px !important;
+    }
+
+    .about .about-text h3 {
         font-size: 13px !important;
     }
 
-    .about .skill-name p {
+    .about .skill-name h3 {
         font-size: 13px !important;
     }
 
@@ -1797,46 +1826,157 @@ a:focus {
 	color: #EF233C;
 }
 
-@media (max-width: 374.99px ) {
+.search_box {
+    border-radius: 20px;
+    background: rgba(5, 5, 5, .75);
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.position {
+    position: fixed;
+    top: 149px;
+    left: 18px;
+    z-index: 3;
+}
+
+.btn_3_position {
+    left: 141px !important;
+}
+
+.project_video {
+    height: 727px;
+    border: 0px;
+    width: 100%;
+}
+
+@media (max-width: 319.98px ) {
+    .btn_3 {
+        left: 69px;
+    }
+
+    .search_box {
+        margin-left: 19px;
+    }
+    .btn_3_position {
+        left: 42px !important;
+    }
+    .project_video {
+        height: 134px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374.98px ) {
 	.btn_3 {
 		left: 69px;
 	}
+
+    .search_box {
+        margin-left: 19px;
+    }
+    .btn_3_position {
+        left: 71px !important;
+    }
+    .project_video {
+        height: 165px;
+    }
 }
 
-@media (min-width: 375px) and (max-width: 424.99px) {
+@media (min-width: 375px) and (max-width: 424.98px) {
 	.btn_3 {
 		left: 97px;
 	}
+    .btn_3_position {
+        left: 102px !important;
+    }
+    .project_video {
+        height: 196px;
+    }
 }
 
-@media (min-width: 425px) and (max-width: 575.99px) {
+@media (min-width: 425px) and (max-width: 575.98px) {
 	.btn_3 {
 		left: 124px;
 	}
+    .btn_3_position {
+        left: 124px !important;
+    }
+    .project_video {
+        height: 224px;
+    }
 }
 
-@media (min-width: 576px) and (max-width: 767.99px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
 	.btn_3 {
 		left: 182px;
 	}
+    .btn_3_position {
+        left: 201px !important;
+    }
+    .project_video {
+        height: 289px;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 991.99px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
 	.btn_3 {
 		left: 92px;
 	}
+    .btn_3_position {
+        left: 293px !important;
+    }
+    .project_video {
+        height: 390px;
+    }
 }
 
-@media (min-width: 992px) and (max-width: 1199.99px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
 	.btn_3 {
 		left: 69px;
 	}
+    .position {
+        top: 104px;
+        left: 0px;
+    }
+    .btn_3_position {
+        left: 170px !important;
+    }
+    .project_video {
+        height: 525px;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1399.98px) {
 	.btn_3 {
     	left: 99px;
 	}
+    .position {
+        top: 127px;
+        left: 0px;
+    }
+    .btn_3_position {
+        left: 121px !important;
+    }
+    .project_video {
+        height: 625px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .position {
+        top: 149px;
+        left: 18px;
+    }
+    .btn_3_position {
+        left: 141px !important;
+    }
+    .project_video {
+        height: 727px;
+    }
 }
 
 
