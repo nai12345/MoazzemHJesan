@@ -51,12 +51,11 @@
 
 @media (min-width: 320px) and (max-width: 374.98px) {
 	canvas {
-		height: 477px !important;
-	}
+		height: 457px !important;	}
 }
 
 @media (max-width: 319.98px) {
 	canvas {
-		height: 528px !important;
+		height: 467px !important;
 	}
 }
