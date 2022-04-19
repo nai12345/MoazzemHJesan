@@ -1,68 +1,85 @@
+/*=======================================================================================================================================
+EXCLUSIVE ON MoazzemHJesan
+=========================================================================================================================================
+Template Name   : MoazzemHJesan
+Author          : Md. Moazzem Hossain Jesan
+Website URL     : https://www.moazzemhjesan.tk
+Patreon URL     : https://www.patreon.com/moazzemhjesan?fan_landing=true
+Version         : 0.1
+=========================================================================================================================================
+Copyright (c) 2022 - MoazzemHJesan
+=======================================================================================================================================*/
+
+/*=======================================================================================================================================
+JS INDEX
+=========================================================================================================================================
+01. loader
+
+02. Initiate the aos.js
+
+03. Back to top button
+
+04. Sticky Navbar
+
+05. Typed Initiate
+
+06. Progressbar
+
+07. Progressbar Counter Up
+
+08. carousel
+
+09. Portfolio filter
+
+10. JQery Filter
+=========================================================================================================================================
+JS INDEX
+=======================================================================================================================================*/
 (function ($) {
     "use strict";
-    
-    // loader
-    var loader = function () {
-        setTimeout(function () {
-            if ($('#loader').length > 0) {
-                $('#loader').removeClass('show');
-            }
-        }, 1);
-    };
-    loader();
-    
-    
-    // Initiate the aos.js
-    AOS.init({
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: 'aos-init', // class applied after initialization
-        animatedClassName: 'aos-animate', // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-    });
-    
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
-    
-    
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-            $('.navbar').addClass('nav-sticky');
-        } else {
-            $('.navbar').removeClass('nav-sticky');
-        }
-    });
-    
-    
-    // Typed Initiate
-    if ($('.hero .hero-text h2').length == 1) {
-        var typed_strings = $('.hero .hero-text .typed-text').text();
-        var typed = new Typed('.hero .hero-text h2', {
-            strings: typed_strings.split(', '),
-            typeSpeed: 100,
-            backSpeed: 20,
-            smartBackspace: false,
-            loop: true
-        });
-    }
-    
-    
-    // Progressbar
+    /******************************/
+    /*********** loader ***********/
+    /******************************/
+    var loader=function(){setTimeout(function(){$("#loader").length>0&&$("#loader").removeClass("show")},1)};loader();
+    /******************************/
+    /*********** loader ***********/
+    /******************************/
+
+    /*******************************************/
+    /*********** Initiate the aos.js ***********/
+    /*******************************************/
+    AOS.init({disable:!1,startEvent:"DOMContentLoaded",initClassName:"aos-init",animatedClassName:"aos-animate",useClassNames:!1,disableMutationObserver:!1,debounceDelay:50,throttleDelay:99});
+    /*******************************************/
+    /*********** Initiate the aos.js ***********/
+    /*******************************************/
+
+    /******************************************/
+    /*********** Back to top button ***********/
+    /******************************************/
+    $(window).scroll(function(){$(this).scrollTop()>200?$(".back-to-top").fadeIn("slow"):$(".back-to-top").fadeOut("slow")}),$(".back-to-top").click(function(){return $("html, body").animate({scrollTop:0},1500,"easeInOutExpo"),!1});
+    /******************************************/
+    /*********** Back to top button ***********/
+    /******************************************/
+
+    /*************************************/
+    /*********** Sticky Navbar ***********/
+    /*************************************/
+    $(window).scroll(function(){$(this).scrollTop()>0?$(".navbar").addClass("nav-sticky"):$(".navbar").removeClass("nav-sticky")});
+    /*************************************/
+    /*********** Sticky Navbar ***********/
+    /*************************************/
+
+    /**************************************/
+    /*********** Typed Initiate ***********/
+    /**************************************/
+    if(1==$(".hero .hero-text h2").length)var typed_strings=$(".hero .hero-text .typed-text").text(),typed=new Typed(".hero .hero-text h2",{strings:typed_strings.split(", "),typeSpeed:100,backSpeed:20,smartBackspace:!1,loop:!0});
+    /**************************************/
+    /*********** Typed Initiate ***********/
+    /**************************************/
+
+    /***********************************/
+    /*********** Progressbar ***********/
+    /***********************************/
     $('.skills').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
@@ -86,9 +103,13 @@
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, {offset: '80%'});
+    /***********************************/
+    /*********** Progressbar ***********/
+    /***********************************/
 
-
-    // Progressbar Counter Up
+    /**********************************************/
+    /*********** Progressbar Counter Up ***********/
+    /**********************************************/
     $( function() {
         var
             // Progressbar Counter Up 1
@@ -404,72 +425,32 @@
      
         setTimeout( progress, 0 );
     });
+    /**********************************************/
+    /*********** Progressbar Counter Up ***********/
+    /**********************************************/
 
+    /********************************/
+    /*********** carousel ***********/
+    /********************************/
+    $(".testimonials-carousel").owlCarousel({center:!0,autoplay:!0,dots:!0,loop:!0,responsive:{0:{items:1}}});
+    $(".owl-carousel").owlCarousel({center:!0,loop:!0,margin:10,nav:!0,responsive:{0:{items:1},776:{items:1},777:{items:2},1185:{items:3}}});
+    /********************************/
+    /*********** carousel ***********/
+    /********************************/
 
-    // Testimonials carousel
-    $(".testimonials-carousel").owlCarousel({
-        center: true,
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0:{
-                items:1
-            }
-        }
-    });
+    /****************************************/
+    /*********** Portfolio filter ***********/
+    /****************************************/
+    var portfolioIsotope=$(".portfolio-container").isotope({itemSelector:".portfolio-item",layoutMode:"fitRows"});$("#portfolio-filter li").on("click",function(){$("#portfolio-filter li").removeClass("filter-active"),$(this).addClass("filter-active"),portfolioIsotope.isotope({filter:$(this).data("filter")})});
+    /****************************************/
+    /*********** Portfolio filter ***********/
+    /****************************************/
 
-    $('.owl-carousel').owlCarousel({
-        center: true,
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            776:{
-                items:1
-            },
-            777:{
-                items:2
-            },
-            1185:{
-                items:3
-            }
-        }
-    });
-    
-    
-    
-    // Portfolio filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-filter li').on('click', function () {
-        $("#portfolio-filter li").removeClass('filter-active');
-        $(this).addClass('filter-active');
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
-
-
-
-    // JQery Filter
-    $("#search_box").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("#search_items .search_item").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-    });
-
-    $(".search_box_2").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $(".search_items_2 .search_item_2").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-    });
-    // JQery Filter
-    
+    /************************************/
+    /*********** JQery Filter ***********/
+    /************************************/
+    $("#search_box").on("keyup",function(){var e=$(this).val().toLowerCase();$("#search_items .search_item").filter(function(){$(this).toggle($(this).text().toLowerCase().indexOf(e)>-1)})}),$(".search_box_2").on("keyup",function(){var e=$(this).val().toLowerCase();$(".search_items_2 .search_item_2").filter(function(){$(this).toggle($(this).text().toLowerCase().indexOf(e)>-1)})});
+    /************************************/
+    /*********** JQery Filter ***********/
+    /************************************/
 })(jQuery);
