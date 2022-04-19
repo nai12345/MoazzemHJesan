@@ -5,7 +5,7 @@ Template Name   : MoazzemHJesan
 Author          : Md. Moazzem Hossain Jesan
 Website URL     : https://www.moazzemhjesan.tk
 Patreon URL     : https://www.patreon.com/moazzemhjesan?fan_landing=true
-Version         : 0.1
+Version         : 1.0
 =========================================================================================================================================
 Copyright (c) 2022 - MoazzemHJesan
 =======================================================================================================================================*/
