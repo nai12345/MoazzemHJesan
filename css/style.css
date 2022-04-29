@@ -92,7 +92,7 @@ a:hover,a:active,a:focus{color:#EF233C;outline:none;text-decoration:none;}
 .navbar.nav-sticky{position:fixed;top:0;width:100%;box-shadow:0 2px 5px rgba(0,0,0,.3);}
 .navbar.navbar-brand{margin:0;font-size:45px;line-height:0px;font-weight:700;letter-spacing:2px;transition:.5s;}
 .navbar .navbar-brand .logo,.navbar .navbar-brand .logo_2{width:71%;}
-.navbar .navbar-brand .logo img,.navbar .navbar-brand .logo_2 img{width:100%;}
+.navbar .navbar-brand .logo img,.navbar .navbar-brand .logo_2 img{width:100%;position:relative;top:13px;}
 .navbar.dropdown-menu{margin-top:0;border:0;border-radius:0;background:#f8f9fa;}
 /****************************************************************************************************************************************
 Nav Bar CSS [Responsive]
@@ -146,7 +146,6 @@ Nav Bar CSS [Responsive]
     .navbar.navbar-brand{color:#EF233C;}
     .navbar .navbar-brand .logo{width:30%;}
     .navbar .navbar-brand .logo_2{width:125%;}
-	.navbar-toggler{width:46px;height:46px;padding:0px;top:20px;}
     .navbar .navbar-nav{margin-top:15px;}
     .navbar a.nav-link{padding:5px;}
     .navbar .dropdown-menu{box-shadow:none;}
@@ -161,8 +160,7 @@ Nav Bar CSS [Responsive]
     .navbar{padding:15px;background:rgba(5,5,5,.75)!important;}    
     .navbar.navbar-brand{color:#EF233C;}
     .navbar .navbar-brand .logo{width:30%;}
-    .navbar .navbar-brand .logo_2{width:134%;}
-	.navbar-toggler{width:38px;height:38px;padding:0px;top:13px;}    
+    .navbar .navbar-brand .logo_2{width:134%;}    
     .navbar .navbar-nav{margin-top:15px;}    
     .navbar a.nav-link{padding:5px;}
     .navbar .dropdown-menu{box-shadow:none;}
@@ -178,7 +176,6 @@ Nav Bar CSS [Responsive]
     .navbar.navbar-brand{color:#EF233C;}
     .navbar .navbar-brand .logo{width:34%;}
     .navbar .navbar-brand .logo_2{width:159%;}
-	.navbar-toggler{width:38px;height:38px;padding:0px;top:13px;}
     .navbar .navbar-nav{margin-top:15px;}
     .navbar a.nav-link{padding:5px;}
     .navbar .dropdown-menu{box-shadow:none;}
@@ -194,7 +191,6 @@ Nav Bar CSS [Responsive]
     .navbar.navbar-brand{color:#EF233C;}
     .navbar .navbar-brand .logo{width:41%;}
     .navbar .navbar-brand .logo_2{width:204%;}
-	.navbar-toggler{width:38px;height:38px;padding:0px;top:10px;right:34px;}
     .navbar .navbar-nav{margin-top:15px;}
     .navbar a.nav-link{padding:5px;}
     .navbar .dropdown-menu{box-shadow:none;}
@@ -209,7 +205,6 @@ Nav Bar CSS [Responsive]
     .navbar{padding:15px;background:rgba(5,5,5,.75)!important;}
     .navbar.navbar-brand{color:#EF233C;}
     .navbar .navbar-brand .logo{width:40%;}
-	.navbar-toggler{width:38px;height:38px;padding:0px;top:10px;right:34px;}
     .navbar .navbar-nav{margin-top:15px;}
     .navbar a.nav-link{padding:5px;}
     .navbar .dropdown-menu{box-shadow:none;}
