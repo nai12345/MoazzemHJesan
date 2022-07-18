@@ -72,7 +72,15 @@ JS INDEX
     /**************************************/
     /*********** Typed Initiate ***********/
     /**************************************/
-    if(1==$(".hero .hero-text h2").length)var typed_strings=$(".hero .hero-text .typed-text").text(),typed=new Typed(".hero .hero-text h2",{strings:typed_strings.split(", "),typeSpeed:100,backSpeed:20,smartBackspace:!1,loop:!0});
+    var typed = new Typed('.typed-text',{
+        strings:["Web Designer","Web Developer","Front End Developer","Back End Developer"],
+        //typeSpeed: 0,
+        //backSpeed: 0,
+        smartBackspace: false, // true is a default
+        backDelay: 1500,
+        //startDelay: 1000,
+        loop: true
+    });
     /**************************************/
     /*********** Typed Initiate ***********/
     /**************************************/
