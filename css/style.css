@@ -233,7 +233,7 @@ Nav Bar CSS [Responsive]
 .hero .hero-text p{color:#ffffff;font-size:25px;font-weight:600;margin-bottom:15px;}
 .hero .hero-text h1{color:#ffffff;font-size:60px;font-weight:700;letter-spacing:3px;margin-bottom:15px;}
 .hero .hero-text h2{display:inline-block;margin:0;height:35px;color:#ffffff;font-size:35px;font-weight:600;}
-.hero .hero-text .typed-text{display:none;}
+.hero .hero-text .typed-text{color:#05D004;}
 .hero .hero-text .typed-cursor{font-size:35px;font-weight:300;color:#ffffff;}
 .hero .hero-btn .btn{margin-top:35px;color:#ffffff;background:transparent;-webkit-box-shadow:inset 0 0 0 0 #ffffff;box-shadow:inset 0 0 0 0 #ffffff;border-color:#ffffff;border-radius:20px;-webkit-transition:0.5s;transition:0.5s;}
 .hero .hero-btn .btn:hover{color:#EF233C;background:#ffffff;-webkit-box-shadow:inset 0 0 0 50px #ffffff;box-shadow:inset 0 0 0 50px #ffffff;}
