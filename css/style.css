@@ -13,55 +13,93 @@ Copyright (c) 2022 - MoazzemHJesan
 /*=======================================================================================================================================
 CSS INDEX
 =========================================================================================================================================
-01. General CSS
+01. text font links
+
+02. icon font links
+
+03. General CSS
     01. General CSS [Responsive]
-02. Nav Bar CSS
+
+04. Nav Bar CSS
     01. Nav Bar CSS [Responsive]
 
-03. Hero CSS
+05. Hero CSS
     01. Hero CSS [Responsive]
 
-04. Section Header
+06. Section Header
     01. Section Header [Responsive]
 
-05. About CSS
+07. About CSS
     01. About CSS [Responsive]
 
-06. Experience CSS
+08. Experience CSS
     01. Experience CSS [Responsive]
 
-07. Service CSS
+09. Service CSS
     01. Service CSS [Responsive]
 
-08. Portfolio CSS
+10. Portfolio CSS
     01. Portfolio CSS [Responsive]
 
-09. Banner CSS
+11. Banner CSS
 
-10. Pricing CSS
+12. Pricing CSS
 
-11. Team CSS
+13. Team CSS
     01. Team CSS [Responsive]
 
-12. Testimonial CSS
+14. Testimonial CSS
 
-13. Contact CSS
+15. Contact CSS
     01. Contact CSS [Responsive]
 
-14. Blog CSS
+16. Blog CSS
 
-15. Footer CSS
+17. Footer CSS
     01. Footer CSS [Responsive]
 
-16. 404 Error Page
+18. 404 Error Page
 =========================================================================================================================================
 CSS INDEX
 =======================================================================================================================================*/
 
+/***********************************/
+/********* text font links *********/
+/***********************************/
+@font-face{font-family:montserrat;src:url("../fonts/text_fonts/montserrat/Montserrat-Bold.ttf");src:url("../fonts/text_fonts/montserrat/Montserrat-Light.ttf");src:url("../fonts/text_fonts/montserrat/Montserrat-Medium.ttf");src:url("../fonts/text_fonts/montserrat/Montserrat-Regular.ttf");src:url("../fonts/text_fonts/montserrat/Montserrat-SemiBold.ttf");}/***********************************/
+/********* text font links *********/
+/***********************************/
+
+/***********************************/
+/********* icon font links *********/
+/***********************************/
+@font-face{font-family:'icomoon';src:url('../fonts/icon_fonts/icomoon.eot');src:url('../fonts/icon_fonts/icomoon.eot')format('embedded-opentype'),url('../fonts/icon_fonts/icomoon.ttf')format('truetype'),url('../fonts/icon_fonts/icomoon.woff')format('woff'),url('../fonts/icon_fonts/icomoon.svg')format('svg');font-weight:normal;font-style:normal;font-display:block;}
+[class^="icon-"],[class*="icon-"]{font-family:'icomoon'!important;speak:never;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.icon-android:before{content:"\e902";}
+.icon-angle-right:before{content:"\e903";}
+.icon-apple:before{content:"\e904";}
+.icon-blogger-b:before{content:"\e905";}
+.icon-calendar-days:before{content:"\e906";}
+.icon-chevron-up:before{content:"\e907";}
+.icon-comments:before{content:"\e908";}
+.icon-facebook-f:before{content:"\e909";}
+.icon-instagram:before{content:"\e90a";}
+.icon-laptop:before{content:"\e90b";}
+.icon-laptop-code:before{content:"\e90c";}
+.icon-linkedin-in:before{content:"\e90d";}
+.icon-quote-left:before{content:"\e90e";}
+.icon-rectangle-list:before{content:"\e90f";}
+.icon-twitter:before{content:"\e910";}
+.icon-user:before{content:"\e911";}
+.icon-youtube:before{content:"\e912";}
+/***********************************/
+/********* icon font links *********/
+/***********************************/
+
 /*******************************/
 /********* General CSS *********/
 /*******************************/
-body{margin:0px;padding:0px;color:#ffffff;background-image:url(../img/bg_body.gif);background-attachment:fixed;background-size:cover;font-family:'Montserrat',sans-serif;}
+body{margin:0px;padding:0px;color:#ffffff;background-image:url(../img/bg_body.gif);background-attachment:fixed;background-size:cover;font-family:montserrat;}
 .bg_overlay{position:relative;background-color:rgba(5,5,5,.5);margin:0px;padding:0px;}
 figure{margin:0px;}
 h1,h2,h3,h4,h5,h6{color:#ffffff;}
@@ -81,8 +119,8 @@ a:hover,a:active,a:focus{color:#EF233C;outline:none;text-decoration:none;}
 @-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);}}
 @keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}
 .back-to-top{position:fixed;display:none;width:44px;height:44px;padding:8px 0;text-align:center;line-height:1;font-size:22px!important;right:15px;bottom:15px;z-index:9;}
-.back-to-top i{color:#ffffff;}
-.back-to-top:hover i{color:#414141;}
+.back-to-top span{color:#ffffff;}
+.back-to-top:hover span{color:#414141;}
 .center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
 .category_header{margin-bottom:0px!important;}
 /****************************************************************************************************************************************
@@ -467,8 +505,8 @@ Experience CSS [Responsive]
 .service .service-item{position:relative;margin-bottom:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-shadow:inset 0 0 0 0 transparent;box-shadow:inset 0 0 0 0 transparent;-webkit-transition:0.5s;transition:0.5s;-webkit-transition-timing-function:linear;transition-timing-function:linear;}
 .service .service-item:hover{-webkit-box-shadow:inset 800px 0 0 0 #ff1493;box-shadow:inset 800px 0 0 0 #ff1493;}
 .service .service-icon{position:relative;width:150px;min-height:150px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border:1px solid #EF233C;background:#ffffff;}
-.service .service-icon i{position:relative;font-size:60px;color:#EF233C;-webkit-transition:.3s;transition:.3s;-webkit-transition-timing-function:linear;transition-timing-function:linear;}
-.service .service-item:hover i{font-size:75px;}
+.service .service-icon span{position:relative;font-size:60px;color:#EF233C;-webkit-transition:.3s;transition:.3s;-webkit-transition-timing-function:linear;transition-timing-function:linear;}
+.service .service-item:hover span{font-size:75px;}
 .service .service-text{position:relative;width:calc(100% - 120px);padding:0 30px;}
 .service .service-text h3{margin-bottom:10px;font-size:20px;font-weight:600;color:#ef233c;-webkit-transition:1s;transition:1s;-webkit-transition-timing-function:linear;transition-timing-function:linear;}
 .service .service-text p{margin:0;font-size:16px;}
@@ -659,7 +697,7 @@ Team CSS [Responsive]
 .testimonial{position:relative;margin:45px 0;padding:90px 0;background:#d300d8;}
 .testimonial .container{max-width:900px;}
 .testimonial .testimonial-icon{margin-bottom:45px;text-align:center;}
-.testimonial .testimonial-icon i{font-size:60px;color:rgba(256,256,256,.5);}
+.testimonial .testimonial-icon span{font-size:60px;color:rgba(256,256,256,.5);}
 .testimonial .testimonial-item{position:relative;margin:0 15px;text-align:center;}
 .testimonial .testimonial-img{position:relative;margin-bottom:15px;z-index:1;}
 .testimonial .testimonial-item img{margin:0 auto;width:120px;padding:10px;border:5px dotted #ffffff;border-radius:100px;}
@@ -720,40 +758,40 @@ Contact CSS [Responsive]
 .blog .blog-text h2{font-size:25px;font-weight:600;}
 .blog .blog-text p{margin-bottom:10px;}
 .blog .blog-item a.btn{margin-top:10px;padding:8px 15px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
-.blog .blog-item a.btn i{margin-left:5px;}
+.blog .blog-item a.btn span{margin-left:5px;}
 .blog .blog-meta{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:15px;}
 .blog .blog-meta p{margin:0 10px 0 0;font-size:13px;}
-.blog .blog-meta i{color:#ffffff;margin-right:5px;}
+.blog .blog-meta span{color:#ffffff;margin-right:5px;}
 .blog .blog-meta p:last-child{margin:0;}
 /****************************************************************************************************************************************
 Blog CSS [Responsive]
 ****************************************************************************************************************************************/
 @media(max-width:319.98px){
-    .blog .blog-item a.btn i{margin-top:4px;}
+    .blog .blog-item a.btn span{margin-top:4px;}
 }
 @media(min-width:320px) and (max-width:374.98px){
-    .blog .blog-item a.btn i{margin-top:4px;}
+    .blog .blog-item a.btn span{margin-top:4px;}
 }
 @media(min-width:375px) and (max-width:424.98px){
-    .blog .blog-item a.btn i{margin-top:4px;}
+    .blog .blog-item a.btn span{margin-top:4px;}
 }
 @media(min-width:425px) and (max-width:575.98px){
-    .blog .blog-item a.btn i{margin-top:5px;}
+    .blog .blog-item a.btn span{margin-top:5px;}
 }
 @media(min-width:576px) and (max-width:767.98px){
-    .blog .blog-item a.btn i{margin-top:4px;}
+    .blog .blog-item a.btn span{margin-top:4px;}
 }
 @media(min-width:768px) and (max-width:991.98px){
-    .blog .blog-item a.btn i{margin-top:4px;}
+    .blog .blog-item a.btn span{margin-top:4px;}
 }
 @media(min-width:992px) and (max-width:1199.98px){
-    .blog .blog-item a.btn i{margin-top:3px;}
+    .blog .blog-item a.btn span{margin-top:3px;}
 }
 @media(min-width:1200px) and (max-width:1399.98px){
-    .blog .blog-item a.btn i{margin-top:4px;}
+    .blog .blog-item a.btn span{margin-top:4px;}
 }
 @media(min-width:1400px){
-    .blog .blog-item a.btn i{margin-top:4px;}
+    .blog .blog-item a.btn span{margin-top:4px;}
 }
 /****************************************************************************************************************************************
 Blog CSS [Responsive]
@@ -775,9 +813,9 @@ Blog CSS [Responsive]
 .footer .footer-menu p:last-child{border:none;}
 .footer .footer-social{position:relative;margin-top:15px;}
 .footer .footer-social a{display:inline-block;}
-.footer .footer-social a i{margin-right:15px;font-size:20px;color:#ffffff;-webkit-transition:.3s;transition:.3s;-webkit-transition-timing-function:linear;transition-timing-function:linear;}
-.footer .footer-social a:last-child i{margin:0;}
-.footer .footer-social a:hover i{color:#414141;}
+.footer .footer-social a span{margin-right:15px;font-size:20px;color:#ffffff;-webkit-transition:.3s;transition:.3s;-webkit-transition-timing-function:linear;transition-timing-function:linear;}
+.footer .footer-social a:last-child span{margin:0;}
+.footer .footer-social a:hover span{color:#414141;}
 .footer .copyright{position:relative;text-align:center;margin-top:30px;padding-top:25px;padding-bottom:25px;}
 .footer .copyright::before{position:absolute;content:"";width:50%;height:1px;top:0;left:25%;background:rgba(256,256,256,.2);}
 .footer .copyright p{margin:0;color:#ffffff;}
