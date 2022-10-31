@@ -99,7 +99,7 @@ CSS INDEX
 /*******************************/
 /********* General CSS *********/
 /*******************************/
-body{margin:0px;padding:0px;color:#ffffff;background-image:url(../img/bg_body.gif);background-attachment:fixed;background-size:cover;font-family:montserrat;}
+body{margin:0px;padding:0px;color:#ffffff;background-image:url(../img/bg_body.gif);background-attachment:fixed;background-size:cover;font-family:montserrat,sans-serif;}
 .bg_overlay{position:relative;background-color:rgba(5,5,5,.5);margin:0px;padding:0px;}
 figure{margin:0px;}
 h1,h2,h3,h4,h5,h6{color:#ffffff;}
