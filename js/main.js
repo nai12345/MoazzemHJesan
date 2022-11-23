@@ -125,7 +125,7 @@ JS INDEX
     /********************************/
     // $(".testimonials-carousel").owlCarousel({center:!0,autoplay:!0,dots:!0,loop:!0,responsive:{0:{items:1}}});
 
-    var owl=$(".owl-carousel");owl.owlCarousel({loop:!1,center:!0,nav:!0,margin:10,dots:!1,navText:["<< Prev","Next >>"],responsive:{0:{items:1},776:{items:1},777:{items:2},1185:{items:3}}});
+    var owl=$(".owl-carousel");owl.owlCarousel({loop:!1,center:!0,nav:!0,margin:10,dots:!1,autoheight:!0,navText:["<< Prev","Next >>"],responsive:{0:{items:1},776:{items:1},777:{items:2},1185:{items:3}}});
     /********************************/
     /*********** carousel ***********/
     /********************************/
