@@ -22,7 +22,7 @@ JS INDEX
     /********************************/
     /*********** carousel ***********/
     /********************************/
-    var owl=$(".owl-carousel");owl.owlCarousel({loop:!1,center:!0,nav:!0,margin:10,dots:!1,navText:["<< Prev","Next >>"],responsive:{0:{items:1},776:{items:1},777:{items:2},1185:{items:2}}});
+    var owl=$(".owl-carousel");owl.owlCarousel({loop:!1,center:!0,nav:!0,margin:10,dots:!1,autoHeight:!1,navText:["<< Prev","Next >>"],responsive:{0:{items:1},776:{items:1},777:{items:2},1185:{items:2}}});
     /********************************/
     /*********** carousel ***********/
     /********************************/
