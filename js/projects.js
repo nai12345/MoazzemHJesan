@@ -74,7 +74,7 @@ JS INDEX
     /********************************/
     /*********** carousel ***********/
     /********************************/
-    var owl=$(".owl-carousel");owl.owlCarousel({loop:!1,nav:!0,margin:10,dots:!1,autoHeight:!0,navText:["<< Prev","Next >>"],responsive:{0:{items:1},600:{items:1},960:{items:1},1200:{items:1}}});
+    var owl=$(".owl-carousel");owl.owlCarousel({loop:!1,nav:!0,margin:10,dots:!1,autoHeight:!1,navText:["<< Prev","Next >>"],responsive:{0:{items:1},600:{items:1},960:{items:1},1200:{items:1}}});
     /********************************/
     /*********** carousel ***********/
     /********************************/
