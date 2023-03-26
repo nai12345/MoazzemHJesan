@@ -9,4 +9,4 @@ YouTube Channel:
 https://www.youtube.com/c/MoazzemHJesan
 
 Become a patron:
-https://www.patreon.com/join/moazzemhjesan?
+https://www.patreon.com/join/moazzemhjesan/checkout?rid=9650126
