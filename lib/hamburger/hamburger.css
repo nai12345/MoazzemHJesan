@@ -1,0 +1,28 @@
+.navbar-toggler{position:relative;right:20px;top:35px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:50px;height:50px;cursor:pointer;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out;}
+.menu-btn_burger{width:20px;height:3px;background:#fff;border-radius:5px;-webkit-box-shadow:0 2px 5px rgba(255,101,47,.2);box-shadow:0 2px 5px rgba(255,101,47,.2);-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out;}
+.menu-btn_burger::before, .menu-btn_burger::after{content:'';position:absolute;width:20px;height:3px;background:#fff;border-radius:5px;-webkit-box-shadow:0 2px 5px rgba(255,101,47,.2);box-shadow:0 2px 5px rgba(255,101,47,.2);-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out;}
+.menu-btn_burger::before{-webkit-transform:translateY(-6px);transform:translateY(-6px);}
+.menu-btn_burger::after{-webkit-transform:translateY(6px);transform:translateY(6px);}
+/* ANIMATION */
+.navbar-toggler.open .menu-btn_burger{-webkit-transform:translateX(-50px);transform:translateX(-50px);background:transparent;-webkit-box-shadow:none;box-shadow:none}
+.navbar-toggler.open .menu-btn_burger::before{-webkit-transform:rotate(45deg) translate(35px,-35px);transform:rotate(45deg) translate(35px,-35px);}
+.navbar-toggler.open .menu-btn_burger::after{-webkit-transform:rotate(-45deg) translate(35px,35px);transform:rotate(-45deg) translate(35px,35px);}
+/* ANIMATION */
+/***********************************************************************************************************************************************
+Responsive
+***********************************************************************************************************************************************/
+@media(min-width:425px) and (max-width:575.98px){
+	.navbar-toggler{height:38px;padding:0px;top:25px;}
+}
+@media(min-width:375px) and (max-width:424.98px){
+	.navbar-toggler{height:38px;padding:0px;top:27px;}
+}
+@media(min-width:320px) and (max-width:374.98px){
+	.navbar-toggler{height:38px;padding:0px;right:34px;top:24px;}
+}
+@media(max-width:319.98px){
+	.navbar-toggler{height:38px;padding:0px;right:34px;top:24px;}
+}
+/***********************************************************************************************************************************************
+Responsive
+***********************************************************************************************************************************************/
