@@ -66,7 +66,7 @@ JS INDEX
     /************************************/
     /*********** JQery Filter ***********/
     /************************************/
-    $("#search_box").on("keyup",function(){var e=$(this).val().toLowerCase();$(".search_items .search_item").filter(function(){$(this).toggle($(this).text().toLowerCase().indexOf(e)>-1)})});
+    // $("#search_box").on("keyup",function(){var e=$(this).val().toLowerCase();$(".search_items .search_item").filter(function(){$(this).toggle($(this).text().toLowerCase().indexOf(e)>-1)})});
     /************************************/
     /*********** JQery Filter ***********/
     /************************************/
