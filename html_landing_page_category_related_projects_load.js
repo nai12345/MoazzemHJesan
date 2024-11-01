@@ -22,7 +22,7 @@ JS INDEX
 	/********************************/
 	/*********** category ***********/
 	/********************************/
-	$(".related_projects").load("./course_and_education_html_landing_page_category_related_projects.html");
+	$(".related_projects").load("./html_landing_page_category_related_projects.html");
 	/********************************/
 	/*********** category ***********/
 	/********************************/
